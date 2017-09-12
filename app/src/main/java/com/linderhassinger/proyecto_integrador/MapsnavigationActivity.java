@@ -124,6 +124,7 @@ public class MapsnavigationActivity extends AppCompatActivity
             Log.d("MI APP",account.getDisplayName());
             //nameuser.setText("linder");
           //nameuser.setText(name);
+            //Un comentario
             System.out.println("nombre de google: " + nameuser);
 //            Log.d("MI APP",account.getPhotoUrl().toString());
         }else{
