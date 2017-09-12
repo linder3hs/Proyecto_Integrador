@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Proyecto_Integrador</string>
+    <string name="title_activity_maps">Agentes de Banco</string>
+    <string name="email">E-mail :</string>
+    <string name="password">Password :</string>
+    <string name="signIn">Ingresar</string>
+    <string name="sigup">¿No tienes una cuenta? <b>Registrarse</b></string>
+    <string name="masadelante">Crea una cuenta mas adelante</string>
+    <string name="register">Registro</string>
+    <string name="nameRegister">Nombre:(Requerido)</string>
+    <string name="emailRegister">Email: (Requerido)</string>
+    <string name="passwordRegister">Contraseña:(Requerido)</string>
+    <string name="passwordRegisterAgain">Verificar contraseña:</string>
+    <string name="finalRegister">Finalizar Registro</string>
+    <string name="requerido">Campo requerido</string>
+    <string name="title_activity_mapsnavigation">Find Bank</string>
+    <string name="nameBanco">Banco NICKY</string>
+    <string name="direccionBanco">CC Open Plaza San Miguel</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Nosotros</string>
+    <string name="ingresa">Ingresa y encuentra el agente mas cercano</string>
+    <string name="weare">Find Bank 1.0.0</string>
+    <string name="grupo">Find Bank 1.0.0</string>
+    <string name="not_login">Revise su conexión de internet :v</string>
+    <string name="nameuser">nameUser</string>
+    <string name="conexion_red">Revise su conexion</string>
+    <string name="nosotros">Somo una un grupo de jovenes programadores, somo estudiantes de la carrera de Diseño
+    de software en Tecup. \nEste proyecto esta orientado para todas las personas \nIntegrantes: \n- Linder Hassinger \n- Seichi Honda \n- Roque Alarcon</string>
+</resources>

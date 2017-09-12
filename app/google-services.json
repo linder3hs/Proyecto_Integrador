@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "824466250914",
+    "firebase_url": "https://findbank-552be.firebaseio.com",
+    "project_id": "findbank-552be",
+    "storage_bucket": "findbank-552be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824466250914:android:5e28ec29b4b8c52d",
+        "android_client_info": {
+          "package_name": "com.linderhassinger.proyecto_integrador"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824466250914-044ksam2qflfkns8oq46a3kcq9gruuv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyra4939XKpeRej2uRiFYDNjOm5Rdkp3k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

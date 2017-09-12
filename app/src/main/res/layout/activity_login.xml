@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_fondo"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fondo"
+    tools:context="com.linderhassinger.proyecto_integrador.LoginActivity">
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:id="@+id/logobcp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:onClick="SignIn"
+            android:src="@drawable/logonewapp"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/logobcp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingresa"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="#fff"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signInButton"
+            android:layout_margin="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
