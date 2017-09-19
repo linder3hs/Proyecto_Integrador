@@ -3,6 +3,7 @@ package com.linderhassinger.proyecto_integrador;
 import android.Manifest;
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -44,8 +46,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsnavigationActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener ,OnMapReadyCallback, GoogleApiClient.OnConnectionFailedListener {
+public class MapsnavigationActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener ,OnMapReadyCallback, GoogleApiClient.OnConnectionFailedListener {
     private GoogleMap mMap;
     private ImageView photoPerfil;
     private TextView nameuser;
@@ -53,16 +54,19 @@ public class MapsnavigationActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapsnavigation);
 
+        LayoutInflater inflater = getLayoutInflater();
+        View myView = inflater.inflate(R.layout.nav_header_mapsnavigation, null);
+        nameuser = (TextView) findViewById(R.id.nameUser);
 
-        photoPerfil = (ImageView) findViewById(R.id.photoUser);
-        nameuser    = (TextView) findViewById(R.id.nameUser);
+
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
-
 
         googleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, this)
@@ -71,8 +75,6 @@ public class MapsnavigationActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
         int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getApplicationContext());
 
@@ -98,6 +100,9 @@ public class MapsnavigationActivity extends AppCompatActivity
     }
 
 
+
+
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -119,14 +124,12 @@ public class MapsnavigationActivity extends AppCompatActivity
     private void handleSignInResuslt(GoogleSignInResult result) {
         if (result.isSuccess()){
             GoogleSignInAccount account = result.getSignInAccount();
-            String name = account.getDisplayName();
-           // nameuser.setText(name);
-            Log.d("MI APP",account.getDisplayName());
-            //nameuser.setText("linder");
-          //nameuser.setText(name);
-            //Un comentario
+
             System.out.println("nombre de google: " + nameuser);
-//            Log.d("MI APP",account.getPhotoUrl().toString());
+            //nameuser.setText(account.getDisplayName());
+            Log.d("MI APP",account.getPhotoUrl().toString());
+            Log.d("MI APP",account.getDisplayName());
+
         }else{
             goLogInScreen();
         }
@@ -157,6 +160,8 @@ public class MapsnavigationActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.mapsnavigation, menu);
+
+
         return true;
     }
 

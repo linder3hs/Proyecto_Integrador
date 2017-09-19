@@ -21,9 +21,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:onClick="SignIn"
             android:src="@drawable/logonewapp"
-            android:layout_margin="16dp"/>
+            android:layout_margin="26dp"/>
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
@@ -38,7 +37,7 @@
             android:text="@string/ingresa"
             android:gravity="center"
             android:textStyle="normal"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textColor="#fff"/>
 
         <com.google.android.gms.common.SignInButton

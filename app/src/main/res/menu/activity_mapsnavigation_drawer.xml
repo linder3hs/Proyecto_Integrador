@@ -16,7 +16,7 @@
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_settings"
+                android:icon="@drawable/ic_people"
                 android:title="Nosotros" />
             <item
                 android:id="@+id/salir"
