@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Find Bank</string>
+    <string name="app_name">Proyecto_Integrador</string>
     <string name="title_activity_maps">Agentes de Banco</string>
     <string name="email">E-mail :</string>
     <string name="password">Password :</string>
@@ -29,11 +29,4 @@
     <string name="conexion_red">Revise su conexion</string>
     <string name="nosotros">Somo una un grupo de jovenes programadores, somo estudiantes de la carrera de Diseño
     de software en Tecup. \nEste proyecto esta orientado para todas las personas \nIntegrantes: \n- Linder Hassinger \n- Seichi Honda \n- Roque Alarcon</string>
-    <string name="agente_nicky">Agente NICKY</string>
-    <string name="_406_av_san_jose_bellavista">406 Av. San Jose, Bellavista</string>
-    <string name="detalle">Detalles</string>
-    <string name="sistema">Sistema:</string>
-    <string name="no_disponible">No disponible</string>
-    <string name="seguridad">Seguridad:</string>
-    <string name="horario">Horario</string>
 </resources>
