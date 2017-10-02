@@ -8,20 +8,46 @@
     tools:context="com.linderhassinger.proyecto_integrador.TestActivity">
 
     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="43dp"
+        android:text="@string/email"
+        android:textColor="@color/negro"
+        android:textSize="20sp" />
+
+    <TextView
         android:id="@+id/txtCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="37dp"
-        android:layout_below="@+id/txtNombre"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textView1"
+        android:textColor="@color/negro"
+        android:textSize="20sp"
+        tools:text="Correo" />
 
     <TextView
         android:id="@+id/txtNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="74dp"
+        android:layout_below="@+id/txtCorreo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        tools:text="Nombre" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/txtCorreo" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/Titulo"
+        android:textColor="@color/negro"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

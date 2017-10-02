@@ -48,7 +48,9 @@
             android:name=".MapsnavigationActivity"
             android:label="@string/title_activity_mapsnavigation"
             android:theme="@style/AppTheme"></activity>
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".TestActivity">
+
+        </activity>
     </application>
 
 </manifest>

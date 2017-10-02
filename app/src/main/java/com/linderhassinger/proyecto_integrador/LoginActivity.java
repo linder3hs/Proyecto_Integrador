@@ -71,7 +71,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             public void run() {
                                 int r=objJSON(res);
                                 if(r>0){
-                                    Intent i=new Intent(getApplicationContext(),MapsnavigationActivity.class);//Prueba del servicio
+                                    Intent i=new Intent(getApplicationContext(),TestActivity.class);//Prueba del servicio
+                                    i.putExtra("correo",txtCorreo.getText().toString());
                                     startActivity(i);
                                 }else {
                                     Toast.makeText(getApplicationContext(),"Correo o Contraseña incorrectos",Toast.LENGTH_SHORT).show();
@@ -93,7 +94,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         String respuesta="";
         try {
             //Se va a la Web y se envia los datos
-            URL url=new URL("http://192.168.0.31/WebService/valida.php");//Cambiar el ip - ya que no es estable por que es local
+            URL url=new URL("https://find-bank-roque363.c9users.io/WebService/valida.php");//Cambiar el ip - ya que no es estable por que es local
             conection=(HttpURLConnection)url.openConnection();
             conection.setRequestMethod("POST");
             conection.setRequestProperty("Content-Length",""+Integer.toString(urlparametros.getBytes().length));

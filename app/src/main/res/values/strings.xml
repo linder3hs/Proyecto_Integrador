@@ -29,4 +29,7 @@
     <string name="conexion_red">Revise su conexion</string>
     <string name="nosotros">Somo una un grupo de jovenes programadores, somo estudiantes de la carrera de Diseño
     de software en Tecup. \nEste proyecto esta orientado para todas las personas \nIntegrantes: \n- Linder Hassinger \n- Seichi Honda \n- Roque Alarcon</string>
+
+    <!--Testeo de la app -->
+    <string name="Titulo">Detalles del usuario</string>
 </resources>
